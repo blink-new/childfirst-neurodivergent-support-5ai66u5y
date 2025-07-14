@@ -73,7 +73,7 @@ export default function Settings() {
       storageUsed: formatBytes(dataSize),
       lastBackup
     });
-  };
+  }, []);
 
   const formatBytes = (bytes: number) => {
     if (bytes === 0) return '0 Bytes';
